@@ -1,4 +1,4 @@
-# kkb-ui
+# sv-ui
 
 ## Project setup
 ```

@@ -1,19 +1,19 @@
 # sv-ui
 
-## Project setup
+## Project setup / 项目初始化
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+npm install / yarn install
 ```
 
-### Compiles and minifies for production
+### Compiles and hot-reloads for development  /  项目启动
 ```
-npm run build
+npm run serve / yarn serve
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Compiles and minifies for production  / 项目打包
+```
+npm run build  yarn build
+```
+
+### 
+

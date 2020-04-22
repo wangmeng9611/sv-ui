@@ -1,24 +1,53 @@
 <template>
   <div id="app">
-    <kkb-button @click="del()">提交</kkb-button>
-    <kkb-table></kkb-table>
-    <!-- <kkb-confirm></kkb-confirm> -->
+    <div class="sv-header"></div>
+    <div class="sv-body">
+      <div class="sv-left">
+        <ul>
+          <li>
+            <router-link to="/">Button 按钮</router-link>
+          </li>
+          <li>
+            <router-link to="/dialog">Dialog 对话框</router-link>
+          </li>
+          <li>
+            <router-link to="/dropdown">Button 按钮</router-link>
+          </li>
+          <li>
+            <router-link to="/">Button 按钮</router-link>
+          </li>
+          <li>
+            <router-link to="/">Button 按钮</router-link>
+          </li>
+          <li>
+            <router-link to="/">Button 按钮</router-link>
+          </li>
+         <li>
+            <router-link to="/">Button 按钮</router-link>
+          </li>
+          <li>
+            <router-link to="/">Button 按钮</router-link>
+          </li>
+          <li>
+            <router-link to="/">Button 按钮</router-link>
+          </li>
+          <li>
+            <router-link to="/">Button 按钮</router-link>
+          </li>
+          <li>
+            <router-link to="/">Button 按钮</router-link>
+          </li>
+        </ul>
+      </div>
+      <div class="sv-right">
+         <router-view/>
+      </div>   
+    </div>  
   </div>
 </template>
 <script>
-import Vue from 'vue'
-import buttton from './components/button'
-import confirm from './components/confirm'
-
-import kkbTable from './components/table/src/kkb-table'
-Vue.use(buttton)
-Vue.use(confirm)
 export default {
   name: 'App',
-  components:{
-    kkbTable,
-  },
-
   methods:{
     del(){
       console.log(12)
@@ -41,5 +70,34 @@ export default {
 }
 </script>
 <style lang="less">
-
+*{
+  margin: 0;
+  padding: 0;
+}
+#app{
+  // background: grey;
+  height: 100%;
+  text-decoration: none;
+  .sv-header{
+    height: 200px;
+    background: hotpink;
+  }
+  .sv-body{
+    display: flex;
+    .sv-left{
+      width: 200px;
+      background: rgb(175, 105, 255);
+      ul{
+        text-align: center;
+        li{
+          margin: 10px auto;
+        }
+      }
+    }
+    .sv-right{
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+  }
+}
 </style>

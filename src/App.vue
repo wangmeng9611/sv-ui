@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="sv-header"></div>
+    <div class="sv-header">sv-ui</div>
     <div class="sv-body">
       <div class="sv-left">
         <ul>
@@ -11,7 +11,7 @@
             <router-link to="/dialog">Dialog 对话框</router-link>
           </li>
           <li>
-            <router-link to="/dropdown">Button 按钮</router-link>
+            <router-link to="/dropdown">dropdown 下拉</router-link>
           </li>
           <li>
             <router-link to="/">Button 按钮</router-link>
@@ -79,14 +79,18 @@ export default {
   height: 100%;
   text-decoration: none;
   .sv-header{
-    height: 200px;
-    background: hotpink;
+    line-height: 200px;
+    //background: hotpink;
+    border:1px dashed #eee;
+    color: #00ffff;
+    font-size :20px;
   }
   .sv-body{
     display: flex;
     .sv-left{
       width: 200px;
-      background: rgb(175, 105, 255);
+      //background: rgb(175, 105, 255);
+      border:1px dashed #eee;
       ul{
         text-align: center;
         li{
